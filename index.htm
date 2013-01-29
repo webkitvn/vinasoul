@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!--Slider-->
+	<link rel="stylesheet" href="style.css">
+	<title>VinaSoul</title>
+
+	<script>
+		$(document).ready(function() {
+		    $(".toggleMenu").css("display", "none");
+		    $(".nav li").hover(function() {
+		        $(this).addClass('hover');
+		    }, function() {
+		        $(this).removeClass('hover');
+		    });
+		});
+	</script>
+</head>
+<body>
+	<header class="container">
+		<div class="row-fluid">
+			<div class="span2">
+				<h1 class="logo"><a href="#"><img src="img/logo_vinasoul.png" alt="VinaSoul"></a></h1>
+			</div>
+			<nav class="span6 offset4">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+				    <li  class="test">
+				        <a href="#">Blog</a>
+				        <ul>
+				            <li>
+				                <a href="#">HTML</a>
+				                <ul>
+				                    <li><a href="#">HTML Basic</a></li>
+				                    <li><a href="#">HTML5</a></li>
+				                </ul>
+				            </li>
+				            <li>
+				                <a href="#">CSS</a>
+				                <ul>
+				                    <li><a href="#">CSS Basic</a></li>
+				                    <li><a href="#">CSS3</a></li>
+				                </ul>
+				            </li>
+				            <li>
+				            	<a href="#">Javascript</a>
+				            	<ul>
+				            		<li><a href="#">Javascript Basic</a></li>
+				            		<li><a href="#">Jquery</a></li>
+				            	</ul>
+				            </li>
+				            <li><a href="#">DownLoad</a></li>
+				        </ul>
+				    </li>
+				    <li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row-fluid">
+			<hr class="line">
+		</div>
+	</header>
+		<div class="row-fluid slide">
+			<ul class="rslides">
+			  	<li><img src="img/1550x400/1.jpg" alt=""></li>
+			  	<li><img src="img/1550x400/2.jpg" alt=""></li>
+			  	<li><img src="img/1550x400/3.jpg" alt=""></li>
+			</ul>
+		</div>
+	<div class="container slogan">
+		<div class="row-fluid">
+			<p class="lead">
+				Welcome to <span class="color">vinasoul.com</span>, this is the official web of <span class="color">vinasoul</span> team.
+			</p>
+		</div>
+		<div class="rwo-fluid">
+			<h1 class="color">In Vinasoul you trust !</h1>
+		</div>
+		<hr>
+	</div>
+	<div class="container services">
+		<div class="row-fluid">
+			<div class="span4">
+				<h3 class="color">Web Design</h3>
+				<div class="row-fluid">
+					<img class="icon" src="img/webdesign.png" alt="Web Design">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas consequatur nobis soluta sed facere laborum odio vel consequuntur temporibus.</p>
+			</div>
+			<div class="span4">
+				<h3 class="color">Web Develop</h3>
+				<div class="row-fluid">
+					<img class="icon" src="img/webdevelop.png" alt="Web Design">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel harum ducimus dolorem in ad nihil sequi neque eveniet minima nemo ullam!</p>
+			</div>
+			<div class="span4">
+				<h3 class="color">SEO</h3>
+				<div class="row-fluid">
+					<img class="icon" src="img/seo.png" alt="Web Design">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laboriosam minima fuga quis repudiandae provident iste a?</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container work">
+		<hr>
+		<h3>Recent work</h3>
+		<div class="row-fluid">
+			<div class="span3"><img src="http://lorempixel.com/400/300/food" alt=""></div>
+			<div class="span3"><img src="http://lorempixel.com/400/300/animals" alt=""></div>
+			<div class="span3"><img src="http://lorempixel.com/400/300/city" alt=""></div>
+			<div class="span3"><img src="http://lorempixel.com/400/300/nature" alt=""></div>
+		</div>
+		<div class="row-fluid">
+			<a class="pull-right" href="">View more </a>
+		</div>
+	</div>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		  $(function() {
+		    $(".rslides").responsiveSlides({
+				  auto: true,             // Boolean: Animate automatically, true or false
+				  speed: 1000,            // Integer: Speed of the transition, in milliseconds
+				  timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
+				  pager: false,           // Boolean: Show pager, true or false
+				  nav: true,             // Boolean: Show navigation, true or false
+				  random: false,          // Boolean: Randomize the order of the slides, true or false
+				  pause: true,           // Boolean: Pause on hover, true or false
+				  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+				  prevText: "Previous",   // String: Text for the "previous" button
+				  nextText: "Next",       // String: Text for the "next" button
+				  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+				  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+				  manualControls: "",     // Selector: Declare custom pager navigation
+				  namespace: "rslides",   // String: Change the default namespace used
+				});
+		  });
+	</script>
+</body>
+</html>

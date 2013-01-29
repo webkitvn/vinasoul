@@ -1,0 +1,162 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Royal Slider — Touch-Enabled jQuery Image Gallery</title>   
+    <meta name="viewport" content="maximum-scale=1,user-scalable=yes,width=800" />    
+    <link rel="stylesheet" href="css/SliderPreview.css">
+    <link rel="stylesheet" href="css/royal-slider-1.0.min.css">
+    
+    <style>
+        #myGallery1 {
+            width: 100%;			
+            height: 400px;
+        }
+		.royalSlider .sgMidText {	
+			font-size:1.3em;
+		}
+		.royalSlider .sgSmallText {	
+			font-size:0.8em;	
+		}
+		.tintButton {
+			background:no-repeat 0 0;
+			background-color:#33383e;
+			color:#EAEAEA;
+			cursor:pointer;
+			padding:5px 12px;
+			
+			-webkit-transition: background-color .2s ease-out;
+			-moz-transition: background-color .2s ease-out;	
+			-o-transition: background-color .2s ease-out;	
+			transition: background-color .2s ease-out;
+		}
+		.tintButton:hover {
+			background-color:#EAEAEA;
+			color:#33383e;
+		}
+    </style>
+
+	<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]--> 
+</head>
+
+<body>
+
+    <div id="container">
+   		<div id="wrapper"> 
+            <h1 id="logo">Royal Slider — Touch-Enabled jQuery Image Gallery</h1> 
+            <div id="myGallery1" class="royalSlider clearfix">
+                <div class="royalLoadingScreen"><p>Loading slider&hellip;<br>Click and drag to navigate</p></div>
+                <ul class="royalSlidesContainer" id="testId">
+                    <li class="royalSlide" style="background-image:url(img/1150x400/6.jpg);"> 
+                        <div class="royalCaption" style="left:23%; margin-top:120px; text-align:center; color:#33383e; width:100%;">
+                            <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="15">Animated Captions</div>
+                            <div class="royalCaptionItem sgMidText" data-show-effect="fade movetop"  data-move-offset="8">With Custom Effects For Each Item</div>
+                            <div class="royalCaptionItem sgSmallText " data-show-effect="fade movetop" data-move-offset="8" data-delay="600" style="margin-top:15px;"><a class="tintButton">Button Example</a></div>
+                        </div>      	
+                    </li>
+                    <li class="royalSlide" style="background-image:url(img/1150x400/7.jpg);"> 
+                        <div class="royalCaption" style="left:57%; top:50px; color:#b93;">
+                            <div class="royalCaptionItem" data-show-effect="moveleft fade" data-move-offset="30">Drag Navigation</div>
+                            <div class="royalCaptionItem sgMidText" data-show-effect="moveleft fade" style="text-indent:120px" data-move-offset="30">With Mobile Support</div>
+                        </div>         	
+                    </li> 
+                    <li class="royalSlide" style="background-image:url(img/1150x400/8.jpg);"> 
+                        <div class="royalCaption" style="left:8%; margin-top:120px;">
+                            <div class="royalCaptionItem " data-show-effect="fade moveleft"  data-move-offset="30">Autoplay Slideshow</div>
+                            <div class="royalCaptionItem sgMidText" data-show-effect="fade moveright" data-move-offset="20" style="text-indent:88px;">with Pause on Hover</div>
+                        </div>      	
+                    </li>
+                    <li class="royalSlide" style="background-image:url(img/1150x400/12.jpg);"> 
+                       <div class="royalCaption" style="left:-2%; margin-top:120px; color:#4e4c39; width:50%; text-align:center;">
+                            <div class="royalCaptionItem " data-show-effect="fade movetop"  data-move-offset="10">Easy to Customize</div>
+                            <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="400" data-move-offset="5" >30+ Documented Options</div>
+                        </div>                               	
+                    </li>
+                </ul>                 
+            </div> <!-- Gallery End -->
+           
+            <div class="previews clearfix"> 
+            	<div class="block4inner">           
+                    <div class="b1 block4"><p class="selectPreview">Select preview:</p></div>                
+                    <div class="b2 block4">
+                    	<div class="previewTypePad previewType current">                        
+                            <a href="index.html">
+                                <h2>Default</h2>
+                                <ul>
+                                	<li>Touch gestures navigation</li>
+                                    <li>Animated HTML captions</li>
+                                    <li>Resizable layout</li>
+                                    <li>Loading screen</li>
+                                    <li>Caption move types</li>
+                                    <li>Bullet navigation</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="b3 block4">
+                  		<div class="previewTypePad previewType">            
+                            <a href="SliderPreviewBanners.html">                        
+                                <h2>Banner Rotator</h2>
+                                <ul>      
+                                	<li>Auto slideshow</li>   
+                                    <li>Custom skins</li>
+                                	<li>Multiple instances on page</li>
+                                    <li>Slideshow pause on hover</li> 
+                                    <li>Fixed layout</li> 
+                                    <li>And much more...</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                     <div class="b4 block4">
+                    	<div class="previewTypePad previewType">            
+                            <a href="SliderPreviewSimpleGallery.html">
+                                <h2>Simple Gallery</h2>
+                                 <ul>                              	  	
+                                    <li>Image Thumbnails</li>  
+                                    <li>Auto hide arrows</li>
+                                    <li>Loading screen</li>
+                                    <li>Resizable layout</li>
+                                    <li>Touch gestures navigation</li>
+                                    <li>And much more...</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- previews end -->           
+        </div> <!-- #wrapper end -->
+    </div> <!--  #container end -->
+   
+ 
+    <script src="js/libs/jquery-1.5.1.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.min.js"></script>
+    <script src="js/mylibs/royal-slider-1.0.min.js"></script> 
+   
+    <script>	
+		$(function() {	
+			var defaultSlider = new RoyalSlider("#myGallery1", {
+				captionShowEffects:["moveleft", "fade"]				
+			});
+		});			  
+    </script>
+
+    <script>
+    jQuery(document).ready(function() {
+        $(".royalSlider").royalSlider({
+            // options go here
+            // as an example, enable keyboard arrows nav
+            keyboardNavEnabled: true
+        });  
+    });
+</script>
+</body>
+
+</html>
